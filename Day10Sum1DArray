@@ -1,0 +1,8 @@
+class Solution{
+    public int[] runningSum(int[] nims){
+        for (int i = 1; i < nims.length; i++) {
+            nims[i] += nims[i - 1];
+        }
+        return nims;
+    }
+}
